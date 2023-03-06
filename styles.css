@@ -233,6 +233,13 @@ section h2 {
   padding-top: 0.8em;
   padding-left: 0.8em;
 }
+@media only screen and (max-width: 700px) {
+  section h2 {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    font-size: 6.5em;
+  }
+}
 section .box {
   width: 80%;
   margin: 0 auto;
@@ -448,6 +455,9 @@ section .box-box {
   font-size: 1.4em;
   line-height: 1.4;
   margin-bottom: 1.5em;
+}
+.booth-list .booth-notice .notice-box ul {
+  padding-left: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

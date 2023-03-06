@@ -72,6 +72,12 @@ section {
   h2 {
     padding-top: 0.8em;
     padding-left: 0.8em;
+
+    @include respond-to(sm) {
+      padding-top: 0.5em;
+      padding-left:0.5em;
+      font-size: 6.5em;
+    }
   }
 
   .box {
@@ -310,6 +316,10 @@ section {
             font-size: 1.4em;
             line-height: 1.4;
             margin-bottom: 1.5em;
+          }
+
+          ul {
+            padding-left: 1em;
           }
       }
     }
