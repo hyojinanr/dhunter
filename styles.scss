@@ -67,10 +67,15 @@ section {
   min-height: 100vh;
   display: block;
 
+  h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
   .box {
     width:80%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
   }
 
   .box-box {
@@ -79,8 +84,62 @@ section {
   }
 }
 
-.schedule {
-    background-color: #fff;
+.info {
+  h5 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+.info-detail {
+  ul.info-list {
+    margin:0;
+    padding:0;
+    li {
+      font-size: 1.5rem;
+      display: flex;
+      margin-bottom: 20px;
+      span.label {
+        font-weight: 700;
+        min-width: 150px;
+      }
+
+      .schedule {
+        dl {
+          display: flex;
+          margin-bottom: 10px;
+          dt {
+            min-width: 100px;
+          }
+        }
+      }
+
+      ul.caution {
+        list-style-type: decimal;
+        padding-left:20px;
+        li {
+          display: list-item;
+        }
+      }
+    }
+  }
+  
+  
+}
+
+.reservation {
+  h4 {
+    margin-bottom: 20px;
+  }
+  h5 {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
 }
 
 .news {
@@ -91,6 +150,11 @@ section {
     background-attachment: fixed;
     h2 {
       color:$mint;
+    }
+
+    h4 {
+      color: white;
+      margin-bottom: 5px;
     }
 
     .box {
@@ -116,4 +180,83 @@ section {
     h2 {
       color:$mint;
     }
+
+    .list-table {
+      background-color: #fff;
+      font-size: 1.2rem;
+
+      table {
+        width:100%;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background-color: #000000;
+        color:#fff;
+        th {
+          padding:10px;
+          border-right:1px solid white;
+        }
+      }
+
+      tbody {
+        td {
+          padding:10px;
+          border-right:1px solid #000000;
+        }
+
+        tr {
+          border-bottom: 1px solid #000000;
+
+          td:first-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .booth-list-down {
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      padding:20px;
+      color:#fff;
+    }
+
+    h4 {
+      color:#fff;
+    }
+
+    .booth-notice {
+      margin-top: 50px;
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      .booth-notice-box {
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+          width:49.5%;
+        }
+      }
+
+      .notice-box {
+        background-color: #fff;
+          border-radius: 20px;
+          padding: 1.5rem;
+
+          h5 {
+            margin-bottom: 10px;
+          }
+
+          p, ul {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+          }
+      }
+    }
+    
 }

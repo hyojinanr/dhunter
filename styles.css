@@ -41,7 +41,7 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 12px;
 }
 
 h1 {
@@ -217,18 +217,64 @@ section {
   min-height: 100vh;
   display: block;
 }
+section h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
 section .box {
   width: 80%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
 }
 section .box-box {
   border: 1px solid #000000;
   padding: 80px;
 }
 
-.schedule {
-  background-color: #fff;
+.info h5 {
+  margin-bottom: 10px;
+}
+.info p {
+  margin-bottom: 20px;
+}
+
+.info-detail ul.info-list {
+  margin: 0;
+  padding: 0;
+}
+.info-detail ul.info-list li {
+  font-size: 1.5rem;
+  display: flex;
+  margin-bottom: 20px;
+}
+.info-detail ul.info-list li span.label {
+  font-weight: 700;
+  min-width: 150px;
+}
+.info-detail ul.info-list li .schedule dl {
+  display: flex;
+  margin-bottom: 10px;
+}
+.info-detail ul.info-list li .schedule dl dt {
+  min-width: 100px;
+}
+.info-detail ul.info-list li ul.caution {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+.info-detail ul.info-list li ul.caution li {
+  display: list-item;
+}
+
+.reservation h4 {
+  margin-bottom: 20px;
+}
+.reservation h5 {
+  margin-bottom: 20px;
+}
+.reservation p {
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 .news {
@@ -240,6 +286,10 @@ section .box-box {
 }
 .news h2 {
   color: #00ff7e;
+}
+.news h4 {
+  color: white;
+  margin-bottom: 5px;
 }
 .news .box {
   display: flex;
@@ -261,6 +311,68 @@ section .box-box {
 }
 .booth-list h2 {
   color: #00ff7e;
+}
+.booth-list .list-table {
+  background-color: #fff;
+  font-size: 1.2rem;
+}
+.booth-list .list-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.booth-list .list-table thead {
+  background-color: #000000;
+  color: #fff;
+}
+.booth-list .list-table thead th {
+  padding: 10px;
+  border-right: 1px solid white;
+}
+.booth-list .list-table tbody td {
+  padding: 10px;
+  border-right: 1px solid #000000;
+}
+.booth-list .list-table tbody tr {
+  border-bottom: 1px solid #000000;
+}
+.booth-list .list-table tbody tr td:first-child {
+  text-align: center;
+}
+.booth-list .booth-list-down {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.booth-list h4 {
+  color: #fff;
+}
+.booth-list .booth-notice {
+  margin-top: 50px;
+}
+.booth-list .booth-notice h4 {
+  margin-bottom: 10px;
+}
+.booth-list .booth-notice .booth-notice-box {
+  display: flex;
+  justify-content: space-between;
+}
+.booth-list .booth-notice .booth-notice-box > div {
+  width: 49.5%;
+}
+.booth-list .booth-notice .notice-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+.booth-list .booth-notice .notice-box h5 {
+  margin-bottom: 10px;
+}
+.booth-list .booth-notice .notice-box p, .booth-list .booth-notice .notice-box ul {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
