@@ -92,6 +92,19 @@ section {
     h2 {
       color:$mint;
     }
+
+    .box {
+      display: flex;
+      justify-content: space-between;
+
+      .twitter-box {
+        width:49.5%;
+
+        .twitter-timeline {
+          width:100%;
+        }
+      }
+    }
 }
 
 .booth-list {

@@ -241,6 +241,16 @@ section .box-box {
 .news h2 {
   color: #00ff7e;
 }
+.news .box {
+  display: flex;
+  justify-content: space-between;
+}
+.news .box .twitter-box {
+  width: 49.5%;
+}
+.news .box .twitter-box .twitter-timeline {
+  width: 100%;
+}
 
 .booth-list {
   background-image: url("./images/background.gif");
