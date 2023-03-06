@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './styles/media.scss';
 @import './styles/reset.scss';
 @import './styles/colors.scss';
 
@@ -14,7 +15,7 @@ body {
     overflow: hidden;
     position: relative;
     background-image: url('./images/background.gif');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: 0 -200px;
     background-attachment: fixed;
@@ -31,7 +32,7 @@ body {
         transform: translate(-50%, -50%);
     }
     
-    h2 {
+    h1{
         text-align: center;
         font-family:  'Montserrat', sans-serif;
         font-weight: 700;
@@ -41,6 +42,7 @@ body {
         top:50%;
         position: absolute;
         transform: translate(-50%, -50%);
+        padding:0;
     }
 
     h4 {
@@ -68,29 +70,39 @@ section {
   display: block;
 
   h2 {
-    margin-top: 20px;
-    margin-left: 20px;
+    padding-top: 0.8em;
+    padding-left: 0.8em;
   }
 
   .box {
     width:80%;
     margin: 0 auto;
-    padding: 50px 0 100px 0;
+    padding: 3em 0 5em 0;
+
+    @include respond-to(md) {
+      padding: 2em 0 4em 0;
+    }
   }
 
   .box-box {
     border:1px solid #000000;
-    padding:80px;
+    padding:6em;
+    @include respond-to(md) {
+      padding: 4em;
+    }
+    @include respond-to(sm) {
+      padding:2em;
+    }
   }
 }
 
 .info {
   h5 {
-    margin-bottom: 10px;
+    margin-bottom: 0.7em;
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 1em;
   }
 }
 .info-detail {
@@ -98,29 +110,47 @@ section {
     margin:0;
     padding:0;
     li {
-      font-size: 1.5rem;
+      font-size: 1.5em;
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 1.5em;
+
+      @include respond-to(sm) {
+        display: block;
+      }
+
       span.label {
         font-weight: 700;
-        min-width: 150px;
+        min-width: 10em;
+
+        @include respond-to(sm) {
+          display: block;
+          margin-bottom: 0.5em;
+        }
       }
 
       .schedule {
         dl {
           display: flex;
-          margin-bottom: 10px;
+          margin-bottom: 0.7em;
           dt {
-            min-width: 100px;
+            min-width: 7em;
+
+            @include respond-to(sm) {
+              min-width: 5em;
+            }
           }
         }
       }
 
       ul.caution {
         list-style-type: decimal;
-        padding-left:20px;
+        padding-left:1.5em;
         li {
+          font-size: 1em;
           display: list-item;
+          @include respond-to(sm) {
+            margin-bottom: 0.5em;
+          }
         }
       }
     }
@@ -130,6 +160,7 @@ section {
 }
 
 .reservation {
+  min-height: unset;
   h4 {
     margin-bottom: 20px;
   }
@@ -144,7 +175,7 @@ section {
 
 .news {
     background-image: url('./images/background.gif');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: 0 -1000px;
     background-attachment: fixed;
@@ -168,12 +199,23 @@ section {
           width:100%;
         }
       }
+
+      @include respond-to(md) {
+        display: block;
+        .twitter-box {
+          width:100%;
+
+          &:first-child {
+            margin-bottom: 4em;
+          }
+        }
+      }
     }
 }
 
 .booth-list {
   background-image: url('./images/background.gif');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: 0 -2000px;
     background-attachment: fixed;
@@ -183,11 +225,12 @@ section {
 
     .list-table {
       background-color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.2em;
 
       table {
         width:100%;
         border-collapse: collapse;
+        word-break: break-all;
       }
 
       thead {
@@ -217,7 +260,7 @@ section {
 
     .booth-list-down {
       display: block;
-      font-size: 2rem;
+      font-size: 2em;
       text-align: center;
       padding:20px;
       color:#fff;
@@ -240,21 +283,33 @@ section {
         > div {
           width:49.5%;
         }
+
+        @include respond-to(md) {
+          display: block;
+
+          > div {
+            width:100%;
+
+            &:first-child {
+              margin-bottom: 2em;
+            }
+          }
+        }
       }
 
       .notice-box {
         background-color: #fff;
           border-radius: 20px;
-          padding: 1.5rem;
+          padding: 1.5em;
 
           h5 {
             margin-bottom: 10px;
           }
 
           p, ul {
-            font-size: 1rem;
+            font-size: 1.4em;
             line-height: 1.4;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.5em;
           }
       }
     }

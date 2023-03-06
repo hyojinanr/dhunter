@@ -40,6 +40,13 @@ body {
   margin:0;
   padding:0;
   font-size: 12px;
+  @include respond-to(md) {
+    font-size: 11px;
+  }
+
+  @include respond-to(sm) {
+    font-size: 9px;
+  }
 }
 
 h1 {
@@ -129,30 +136,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 10em;
 }
 
 h2 {
-    font-size: 8rem;
+    font-size: 8em;
+
+    word-break: break-all;
 }
 
 h3 {
-    font-size: 6rem;
+    font-size: 6em;
 }
 
 h4 {
-    font-size: 4rem;
+    font-size: 4em;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h6 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     margin:0;
 }
