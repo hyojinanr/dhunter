@@ -16,8 +16,8 @@ body {
     position: relative;
     background-image: url('./images/background.gif');
     background-repeat: repeat;
-    background-size: cover;
-    background-position: 0 -200px;
+    background-size: 100%;
+    background-position: 0 0;
     background-attachment: fixed;
 
     h5 {
@@ -182,7 +182,7 @@ section {
 .news {
     background-image: url('./images/background.gif');
     background-repeat: repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: 0 -1000px;
     background-attachment: fixed;
     h2 {
@@ -222,7 +222,7 @@ section {
 .booth-list {
   background-image: url('./images/background.gif');
     background-repeat: repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: 0 -2000px;
     background-attachment: fixed;
     h2 {
