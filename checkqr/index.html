@@ -29,8 +29,8 @@
         <td><span id="confirm"></span></td>
       </tr>
       <tr>
-        <td>이메일</td>
-        <td><span id="email"></span></td>
+        <td>연락처</td>
+        <td><span id="contact"></span></td>
       </tr>
     </table>
     <script>
@@ -60,7 +60,7 @@
   
         var name = GetURLParameter('name');
         var birth = GetURLParameter('birth');
-        var email = GetURLParameter('email');
+        var contact = GetURLParameter('contact');
         var confirm = GetURLParameter('confirm');
   
         name = decodeURI(name);
@@ -68,7 +68,7 @@
         $('#name').text(name);
         $('#birth').text(birth);
         $('#confirm').text(confirm);
-        $('#email').text(email);
+        $('#contact').text(contact);
       });
     </script>
     
